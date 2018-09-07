@@ -22,7 +22,9 @@ public class PlayerLogic : MonoBehaviour {
     [Range(0f, 1f)] [SerializeField] float deathSFXVolume = 0.7f;
     [Range(0f, 1f)] [SerializeField] float shootSFXVolume = 0.7f;
 
+    // coroutines and cached references
     Coroutine fireCoroutine;
+    CounterLifePlayer counterLifePlayer;
 
     // runtime-calculated variables
     float xMin;
@@ -32,6 +34,7 @@ public class PlayerLogic : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        counterLifePlayer = FindObjectOfType<CounterLifePlayer>();
         SetUpMoveBoundaries();
 	}
 
@@ -55,6 +58,7 @@ public class PlayerLogic : MonoBehaviour {
     {
         health -= damageDealer.GetDamage();
         damageDealer.Hit();
+        counterLifePlayer.ProcessDamage(damageDealer.GetDamage());
         if (health <= 0)
         {
             Die();
