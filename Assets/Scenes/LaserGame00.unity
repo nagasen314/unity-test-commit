@@ -524,6 +524,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 163b3f75717304c4280af8d43eab75b6, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &625704460
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.5655684
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.0648293
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.9824219
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821161298282298, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c4edefc8a4ae5d64da7808764b40c155, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &856529957
 Prefab:
   m_ObjectHideFlags: 0
@@ -960,7 +1002,7 @@ Prefab:
     - target: {fileID: 114497740618647490, guid: 02ff179387f198843abae7a74baf1edb,
         type: 2}
       propertyPath: looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02ff179387f198843abae7a74baf1edb, type: 2}
@@ -1007,49 +1049,3 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68b17a01025477a438e8fc4e667385a5, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1688266867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1688266869}
-  - component: {fileID: 1688266868}
-  m_Layer: 0
-  m_Name: CounterLifePlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1688266868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688266867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d83b0cdd0891631479f64b3fdbee4237, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealthIconPrefab: {fileID: 1347255098171570, guid: 06d6c3a04e5064842947693892937ea0,
-    type: 2}
-  healthPerCounter: 100
-  iconOffset: 0.06
-  xOffset: 0.05
-  yOffset: 0.02
---- !u!4 &1688266869
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688266867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5655684, y: 5.0648293, z: 0.9824219}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

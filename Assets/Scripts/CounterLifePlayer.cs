@@ -46,7 +46,8 @@ public class CounterLifePlayer : MonoBehaviour {
         {
             if (currentLifeIconIndex < 0)
             {
-                // log error
+                // log error?
+                break;
             }
             Destroy(healthIcons[currentLifeIconIndex]);
             currentLifeIconIndex--;
